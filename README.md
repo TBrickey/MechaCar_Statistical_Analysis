@@ -2,7 +2,7 @@
 ## Linear Regression to Predict MPG
 ### Part 1
 -	The vehicle length and ground clearance’s coefficients provide a non-random amount of variance to the mpg values.
--	The slope of the linear model is considered not zero.  
+-	The slope of the linear model is considered not zero with significant coefficients.  
 -	The linear model effectively predicts the mpg of MechaCar prototypes because the median value is close to zero.
  
 
