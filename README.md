@@ -32,7 +32,6 @@ There is a summary that addresses the design specification requirement for all t
 
 ![TBrickey](https://github.com/TBrickey/MechaCar_Statistical_Analysis/blob/main/Resources/t.test(subset()).png)
 
-There is a summary of the t-test results across all manufacturing lots and for each lot 
 ## Study Design: MechaCar vs Competition
 ### Part 4
 
