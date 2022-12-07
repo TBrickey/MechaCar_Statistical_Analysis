@@ -1,7 +1,10 @@
 # MechaCar_Statistical_Analysis
 ## Linear Regression to Predict MPG
 ### Part 1
-There is a summary that addresses all three questions 
+-	The vehicle length and ground clearance’s coefficients provide a non-random amount of variance to the mpg values.
+-	The slope of the linear model is considered not zero.  
+-	The linear model effectively predicts the mpg of MechaCar prototypes because the median value is close to zero.
+ 
 
 ![TBrickey](https://github.com/TBrickey/MechaCar_Statistical_Analysis/blob/main/Resources/lm()%20Screenshot.png)
 
