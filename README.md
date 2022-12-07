@@ -1,11 +1,11 @@
 # MechaCar_Statistical_Analysis
 ## Linear Regression to Predict MPG
 ### Part 1
+
 -	The vehicle length and ground clearance’s coefficients provide a non-random amount of variance to the mpg values.
 -	The slope of the linear model is considered not zero with significant coefficients.  
 -	The linear model effectively predicts the mpg of MechaCar prototypes because the median value is close to zero.
  
-
 ![TBrickey](https://github.com/TBrickey/MechaCar_Statistical_Analysis/blob/main/Resources/lm()%20Screenshot.png)
 
 ![TBrickey](https://github.com/TBrickey/MechaCar_Statistical_Analysis/blob/main/Resources/summary(lm()).png)
@@ -35,3 +35,24 @@ There is a summary that addresses the design specification requirement for all t
 There is a summary of the t-test results across all manufacturing lots and for each lot 
 ## Study Design: MechaCar vs Competition
 ### Part 4
+
+Write a short description of a statistical study that can quantify how the MechaCar performs against the competition. In your study design, think critically about what metrics would be of interest to a consumer: for a few examples, cost, city or highway fuel efficiency, horse power, maintenance cost, or safety rating.
+
+With the increase of cars, semi-trucks & delivery trucks on the road, it is critical for MechaCar to have high or comparably safety ratings.
+
+What metric or metrics are you going to test?
+
+-Safety ratings tests from MechaCar, competitors, and government safety standards.
+
+What is the null hypothesis or alternative hypothesis?
+
+-	Null Hypothesis H0 MechaCar has high or comparable safety ratings
+-	Alternate Hypothesis Ha MechaCar does not have high or comparable safety ratings
+
+What statistical test would you use to test the hypothesis? And why?
+
+MechaCar can use Linear Regression and subset to analysy the safety rates by vehicle type and competitor. 
+
+What data is needed to run the statistical test?
+
+MechaCar will need crash rating obtained from data collected from  frontal crash test, Moderate overlap frontal test, Driver-side small overlap frontal test, Passenger-side small overlap frontal test, and crash test dummies injuries.
