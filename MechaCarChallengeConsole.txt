@@ -90,3 +90,52 @@ F-statistic: 22.07 on 5 and 44 DF,  p-value: 5.35e-11
 
 > savehistory("C:/Users/OneDrive/Desktop/TB_BootcampChallenge/MechaCar_Statistical_Analysis/MechaCarChallenge2.Rhistory")
 > 
+> Suspension_coil <- read.csv(file='Suspension_Coil.csv',check.names=F,stringsAsFactors = F)
+> ?summarise()
+> View(Suspension_coil)
+> total_summary <- Suspension_coil %>% summarise(Mean=mean(PSI), Median=median(PSI), Variance=Variance(PSI), SD=sd(PSI))
+Error in `summarise()`:
+! Problem while computing `Variance = Variance(PSI)`.
+Caused by error in `Variance()`:
+! could not find function "Variance"
+Run `rlang::last_error()` to see where the error occurred.
+> total_summary <- Suspension_coil %>% group_by(condition) %>% summarise(Mean=mean(PSI), Median=median(PSI), Variance=variance(PSI), SD=sd(PSI))
+Error in `group_by()`:
+! Must group by variables found in `.data`.
+✖ Column `condition` is not found.
+Run `rlang::last_error()` to see where the error occurred.
+> View(Suspension_coil)
+> total_summary <- Suspension_coil %>% group_by(condition) %>% summarize(Mean=mean(PSI), Median=median(PSI), Variance=variance(PSI), SD=sd(PSI))
+Error in `group_by()`:
+! Must group by variables found in `.data`.
+✖ Column `condition` is not found.
+Run `rlang::last_error()` to see where the error occurred.
+> total_summary <- Suspension_coil %>% group_by(condition) %>% summarize(Mean=mean(PSI), Median=median(PSI), Variance=variance(PSI), SD=sd(PSI), .groups = 'keep')
+Error in `group_by()`:
+! Must group by variables found in `.data`.
+✖ Column `condition` is not found.
+Run `rlang::last_error()` to see where the error occurred.
+> total_summary <- suspension_coil %>% group_by(PSI) %>% summarize(Mean=mean(PSI), Median=median(PSI), Variance=variance(PSI), SD=sd(PSI), .groups = 'keep')
+Error in group_by(., PSI) : object 'suspension_coil' not found
+> View(Suspension_coil)
+> Suspension_coil <- read.csv(file='Suspension_Coil.csv',check.names=F,stringsAsFactors = F)
+> total_summary <- Suspension_coil %>% summarize(Mean=mean(PSI), Median=median(PSI), Variance=variance(PSI), SD=sd(PSI))
+Error in `summarize()`:
+! Problem while computing `Variance = variance(PSI)`.
+Caused by error in `variance()`:
+! could not find function "variance"
+Run `rlang::last_error()` to see where the error occurred.
+> library(tidyverse)
+> Suspension_coil <- read.csv(file='Suspension_Coil.csv',check.names=F,stringsAsFactors = F)
+> total_summary <- Suspension_coil %>% summarize(Mean=mean(PSI), Median=median(PSI), Variance=variance(PSI), SD=sd(PSI))
+Error in `summarize()`:
+! Problem while computing `Variance = variance(PSI)`.
+Caused by error in `variance()`:
+! could not find function "variance"
+Run `rlang::last_error()` to see where the error occurred.
+> total_summary <- Suspension_coil %>% summarize(Mean=mean(PSI), Median=median(PSI), Variance=var(PSI), SD=sd(PSI))
+> View(total_summary)
+> ?group_by()
+> View(Suspension_coil)
+> lot_summary <- Suspension_coil %>% group_by(Manufacturing_Lot) %>% summarize(Mean=mean(PSI), Median=median(PSI), Variance=var(PSI), SD=sd(PSI))
+> View(lot_summary)
